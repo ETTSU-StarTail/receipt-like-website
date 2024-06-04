@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Basic Info -->
+    <title>Receipt-like Web page</title>
+    <meta charset="utf-8">
+    <meta name="author" content="ETTSU@StarTail">
+    <meta name="description" content="レシートのようなデザインのWebページ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OGP Info -->
+    <meta property="og:image" content="">
+    <meta property="og:description" content="レシートのようなデザインのWebページ">
+    <meta property="og:title" content="Receipt-like Web page">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Receipt-like Web page">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="shortcut icon" href="">
+
+    <!-- CSS/JS -->
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
+    <link rel="stylesheet" href="./css/receipt.css" />
+    <script type="text/javascript" src="./js/receipt.js"></script>
+  </head>
+
+  <body>
+    <div class="receipt_printer"></div>
+    <div class="receipt">
+      <div class="receipt--gutter"></div>
+      <div class="receipt--body">
+        <header class="receipt--header">
+          <section class="store_info">
+            <h1 class="store_info--logo text-center">StarTail</h1>
+            <p class="store_info--name text-justify">スタンドリバー店</p>
+            <p class="text-right">登録番号:XXXXXXXXXXXX</p>
+            <p class="text-left">イーストキャピタルスタンドリバー1-1-7</p>
+            <div class="flex-space_between">
+              <p class="text-left">電話;XXX-XXX-XXXX</p>
+              <p class="text-right">店コード;XXXXXX</p>
+            </div>
+            <p class="text-center">YYYY年MM月DD日(D) HH:mm</p>
+            <div class="flex-space_between">
+              <p class="text-left">ﾚｼﾞ;#2 XXXXX</p>
+              <p class="text-right">責;セルフレジ</p>
+            </div>
+          </section>
+          <nav>
+          </nav>
+        </header>
+
+        <main class="receipt--main">
+          <h2 class="text-center">【領収証】</h2>
+          <dl class="item_list">
+            <dt class="text-left">ｼﾞｬｽﾐﾝﾃｨｰ S</dtS>
+            <dd class="text-right">100軽</dd>
+            <dt class="text-left">ﾌﾞﾚﾝﾄﾞｺｰﾋｰ L</dtS>
+            <dd class="text-right">300軽</dd>
+            <dt class="text-left">ﾃﾞｨｰﾌﾟﾌﾞﾚﾝﾄﾞ S</dtS>
+            <dd class="text-right">140軽</dd>
+            <dt class="text-left">ｱｲｽｺｰﾋｰ S</dtS>
+            <dd class="text-right">100軽</dd>
+          </dl>
+        </main>
+
+        <footer class="receipt--footer">
+        </footer>
+      </div>
+    </div>
+  </body>
+
+</html>
